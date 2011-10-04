@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="dk.illution.clickthis" version="1.0.2">
-  <name>ClickThis</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="dk.illution.clickthis.authenticator" version="1.0.1">
+  <name>ClickThis Authenticator</name>
   <description>
-		The native ClickThis app
+		The native ClickThis Authenticator app
 	</description>
   <author href="http://illution.dk" email="support@illution.dk">
 		Illution
