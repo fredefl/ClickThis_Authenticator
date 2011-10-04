@@ -16,21 +16,6 @@
 		<div id="map" class="view">
 			<a onClick="Notify();">Hehe</a>
 		</div>
-
-	<script type="text/javascript">
-	var Store = new Lawnchair({name:'Authenticator'}, function(Store) {
-		// Create an object
-		var SerectKey = {key:'SecretKey'};
-	
-		// Save it
-		Store.save(SecretKey);
-	
-		// Access it later... Yes even after a page refresh!
-		Store.get('SecretKey', function(me) {
-			document.getElementById('map_button').innerHTML = me;
-		});
-	});
-	</script>
 	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
@@ -38,5 +23,19 @@
     <script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
-	</body>
+	<script type="text/javascript">
+		var Store = new Lawnchair({name:'Authenticator'}, function(Store) {
+			// Create an object
+			var SerectKey = {SecretKey:'Baah1234'};
+		
+			// Save it
+			Store.save(SecretKey);
+		
+			// Access it later... Yes even after a page refresh!
+			Store.get('SecretKey', function(me) {
+				document.getElementById('map_button').innerHTML = me;
+			});
+		});
+	</script>
+    </body>
 </html>
