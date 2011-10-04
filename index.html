@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+		<title>Training App</title>
+		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />		
+	</head>
+	<body>
+ 		<div id="title_bar">ClickThis</div>
+
+		<div id="welcome" class="view">
+		  <div class="app_button" id="map_button">Show My Location</div>
+  	      <div class="app_button" id="settings_button">Settings</div>
+		</div>
+
+		<div id="map" class="view">
+			<a onClick="Notify();">Hehe</a>
+		</div>
+
+	<script type="text/javascript">
+	var Store = new Lawnchair({name:'Authenticator'}, function(Store) {
+		// Create an object
+		var SerectKey = {key:'SecretKey'};
+	
+		// Save it
+		Store.save(SecretKey);
+	
+		// Access it later... Yes even after a page refresh!
+		Store.get('SecretKey', function(me) {
+			console.log(me);
+		});
+	});
+	</script>
+	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/lawnchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

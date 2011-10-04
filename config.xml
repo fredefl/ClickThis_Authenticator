@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="dk.illution.clickthis" version="1.0.2">
+  <name>ClickThis</name>
+  <description>
+		The native ClickThis app
+	</description>
+  <author href="http://illution.dk" email="support@illution.dk">
+		Illution
+	</author>
+  <gap:platforms>
+    <gap:platform name="android" minVersion="2.2" />
+    <!--
+	<gap:platform name="webos" />
+    <gap:platform name="symbian.wrt" />
+    <gap:platform name="blackberry" project="widgets" />
+	-->
+  </gap:platforms>
+  <icon src="icon.png" gap:role="default" />
+  <!--<feature name="http://api.phonegap.com/1.0/geolocation"/>-->
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <!-- sample preference specification -->
+  <!-- <preference name="autorotate" value="false" readonly="true"/> -->
+</widget>
