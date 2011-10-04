@@ -27,7 +27,7 @@
 	
 		// Access it later... Yes even after a page refresh!
 		Store.get('SecretKey', function(me) {
-			console.log(me);
+			document.getElementById('map').innerHTML = me;
 		});
 	});
 	</script>
