@@ -4,7 +4,8 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
 		<title>ClickThis - Authenticator</title>
 		<link rel="stylesheet" href="assets/css/jqtouch.css" type="text/css"/>	
-        <link rel="stylesheet" href="assets/css/jqt/theme.css" type="text/css"/>	
+        <link rel="stylesheet" href="assets/css/jqt/theme.css" type="text/css"/>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>	
 	</head>
 	<body onLoad="refresh();setInterval(refresh, 1000);">
     	<div id="jqt">
@@ -14,10 +15,15 @@
                     <a class="button slideup" id="infoButton" href="#about">Accounts</a>
                 </div>
                 <ul class="rounded">
-                    <li class="arrow"><a style="width:361px;text-overflow:ellipsis;">frederiklassen@gmail.comfishingrod</a><small class="counter" id="code">0</small></li>	          		
+                    <li class="arrow"><a>frederiklassen@gmail.com
+                    <script type="text/javascript">
+						var email = "frederiklassen@gmail.com";
+						alert(($(".arrow").width())/19);
+					</script>
+                    </a><small class="counter" id="code">0</small></li>	          		
                 </ul>
             </div>
-	</div>
+	</div>   
 	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
