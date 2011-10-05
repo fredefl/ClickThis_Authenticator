@@ -15,12 +15,7 @@
                     <a class="button slideup" id="infoButton" href="#about">Accounts</a>
                 </div>
                 <ul class="rounded">
-                    <li class="arrow"><a>frederiklassen@gmail.com
-                    <script type="text/javascript">
-						var email = "frederiklassen@gmail.com";
-						alert(($(".arrow").width())/19);
-					</script>
-                    </a><small class="counter" id="code">0</small></li>	          		
+                    <li class="arrow"><a class="account">frederiklassen@gmail.comiliketurtels</a><small class="counter" id="code">0</small></li>	          		
                 </ul>
             </div>
 	</div>   
@@ -32,6 +27,17 @@
     <script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+	var maxChars = $(".account").width() / 19 / 100 * 170; 
+	console.log(maxChars);
+	var currentChars = $(".account").html().length;
+	var currentText = $(".account").html();
+	var newText = "";
+	if(currentChars > maxChars) {
+		newText = currentText.substring(0, maxChars - 3);
+		newText += "...";
+		$(".account").html(newText);
+	}
+	
 	/*
 		document.getElementById('settings_button').innerHTML = "Llama";
 		var Store = new Lawnchair({name:'Authenticator'}, function(Store) {
