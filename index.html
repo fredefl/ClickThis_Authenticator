@@ -38,22 +38,16 @@
 			newText += "...";
 			$(".account").html(newText);
 		}
-	});
-	
-	/*
-		document.getElementById('settings_button').innerHTML = "Llama";
-		var Store = new Lawnchair({name:'Authenticator'}, function(Store) {
-			// Create an object
-			var SerectKey = {'SecretKey':'Baah1234'};
-		
+		var store = new Lawnchair({name:'Authenticator'}, function(store) {
 			// Save it
-			Store.save(SecretKey);
-		
+			store.save({key:'data'},'Hehe');
+			
 			// Access it later... Yes even after a page refresh!
-			Store.get('SecretKey', function(me) {
-				document.getElementById('map_button').innerHTML = me;
+			store.get('data', function(me) {
+				alert(me); 
 			});
-		})*/ 
+		})
+	});
 	 function repeat(pattern, count) {
 		if (count < 1) return '';
 		var result = '';
