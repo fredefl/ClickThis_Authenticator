@@ -2,20 +2,22 @@
 <html>
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title>Training App</title>
-		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />		
+		<title>ClickThis - Authenticator</title>
+		<link rel="stylesheet" href="assets/css/jqtouch.css" type="text/css"/>	
+        <link rel="stylesheet" href="assets/css/jqt/theme.css" type="text/css"/>	
 	</head>
-	<body onLoad="setInterval(refresh, 1000)">
- 		<div id="title_bar">ClickThis</div>
-
-		<div id="welcome" class="view">
-          <div class="app_button">Code:</div>
-          <div class="app_button" id="code"></div>
-		</div>
-
-		<div id="map" class="view">
-			<a onClick="Notify();">Hehe</a>
-		</div>
+	<body onLoad="refresh();setInterval(refresh, 1000);">
+    	<div id="jqt">
+            <div id="home" class="current">
+                <div class="toolbar">
+                    <h1>Authenticator</h1>
+                    <a class="button slideup" id="infoButton" href="#about">Accounts</a>
+                </div>
+                <ul class="rounded">
+                    <li class="arrow"><a>frederiklassen@gmail.com</a><small class="counter" id="code">0</small></li>	          		
+                </ul>
+            </div>
+	</div>
 	<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
