@@ -139,6 +139,7 @@ body {
     font: bold 14px "Helvetica Neue", Helvetica;
     padding: 0;
     margin: 15px 10px 17px 10px;
+	text-overflow:ellipsis;
 }
 #jqt ul.rounded {
     -webkit-border-radius: 8px;
